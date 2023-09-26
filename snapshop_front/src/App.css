@@ -1,0 +1,93 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.IMGS {
+  margin: 40px 20px 0px 20px;
+}
+
+
+
+.IMGS:hover {
+  /* width: 220px;
+  height: 220px; */
+  box-shadow: 4px 6px 3px #282c34 ;
+  /* box-shadow: 2px 3px 6px 2px #282c34 ; */
+  
+  
+  transform: scale(1.2); /* Scale the image to 110% on hover */
+  transition: transform 0.3s ease; /* Add a smooth transition effect */
+  /* Other styles (box-shadow, etc.) can be applied here */
+}
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Adjust column width as needed */
+  gap: 40px; /* Adjust the gap between grid items */
+}
+
+.grid-item {
+  width: 100%;
+  height: auto;
+}
+
+
+#searchInput{
+  height: 30px;
+  background-color: #282c34;
+  color: white;
+  margin-right: 20px;
+  text-align: center;
+  text-transform: capitalize;
+  font-size: larger;
+}
+
+#button {
+  height: 36px;
+  background-color: #282c34;
+  color: white;
+  font-size: larger;
+  border-radius: 8px;
+}
+
+#button:hover{
+  transform: scale(1.1);
+
+}
